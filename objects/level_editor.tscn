@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://t8ymbej01ikb"]
+
+[ext_resource type="Script" uid="uid://cahfm8fi1ua0g" path="res://objects/level_editor.gd" id="1_gwl1q"]
+
+[node name="LevelEditor" type="Node2D"]
+script = ExtResource("1_gwl1q")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="finished" from="MusicPlayer" to="." method="_on_music_player_finished"]
